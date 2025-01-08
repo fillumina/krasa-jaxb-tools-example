@@ -24,7 +24,7 @@
     <krasa-jaxb-tools.version>2.4-SNAPSHOT</krasa-jaxb-tools.version>
     <krasa-jaxb-tools-example.version>2.4-SNAPSHOT</krasa-jaxb-tools-example.version>
 
-    <jaxb2-basics.version>1.11.1</jaxb2-basics.version>
+    <jaxb2-basics.version>0.13.1</jaxb2-basics.version>
     <maven-jaxb2-plugin.version>0.15.3</maven-jaxb2-plugin.version>
     <validation-api.version>2.0.1.Final</validation-api.version>
     <hibernate-validator.version>5.4.1.Final</hibernate-validator.version>

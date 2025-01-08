@@ -19,6 +19,12 @@
     </dependency>
 
     <dependency>
+      <groupId>org.jvnet.jaxb2_commons</groupId>
+      <artifactId>jaxb2-basics</artifactId>
+      <version>0.13.1</version>
+    </dependency>
+
+    <dependency>
       <groupId>javax.validation</groupId>
       <artifactId>validation-api</artifactId>
       <version>2.0.1.Final</version>
@@ -35,7 +41,7 @@
           <dependency>
             <groupId>com.fillumina</groupId>
             <artifactId>krasa-jaxb-tools</artifactId>
-            <version>2.3</version>
+            <version>${krasa-jaxb-tools.version}</version>
           </dependency>
         </dependencies>
         <executions>
@@ -50,6 +56,8 @@
               </sources>
               <packageName>a</packageName>
               <arguments>
+                <argument>-XhashCode</argument>
+                <argument>-Xequals</argument>
                 <argument>-XJsr303Annotations</argument>
                 <argument>-XJsr303Annotations:verbose=false</argument>
                 <argument>-XJsr303Annotations:validationAnnotations=javax</argument>
@@ -80,6 +88,8 @@
               </sources>
               <packageName>b</packageName>
               <arguments>
+                <argument>-XhashCode</argument>
+                <argument>-Xequals</argument>
                 <argument>-XJsr303Annotations</argument>
                 <argument>-XJsr303Annotations:verbose=false</argument>
                 <argument>-XJsr303Annotations:validationAnnotations=javax</argument>
@@ -110,5 +120,4 @@
     </plugins>
 
   </build>
-  <name>krasa-jaxb2-maven-plugin-example</name>
 </project>

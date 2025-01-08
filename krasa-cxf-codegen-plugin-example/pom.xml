@@ -46,8 +46,8 @@
                     <extraarg>${project.parent.basedir}/wsdl/jaxws-Hello.xml</extraarg>
                     <extraarg>-xjc-XJsr303Annotations:verbose=true</extraarg>
                     <extraarg>-xjc-XReplacePrimitives</extraarg>
-                    <!--<extraarg>-xjc-XhashCode</extraarg>
-                    <extraarg>-xjc-Xequals</extraarg>-->
+                    <extraarg>-xjc-XhashCode</extraarg>
+                    <extraarg>-xjc-Xequals</extraarg>
                     <extraarg>-xjc-XJsr303Annotations</extraarg>
                     <!-- parameter for the ValidSEIGenerator -->
                     <extraarg>-xjc-XJsr303Annotations:generateServiceValidationAnnotations=InOut</extraarg>
